@@ -1,0 +1,39 @@
+.our-clients-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .our-clients-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .company-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        border-color: $accent-color;
+        border: 1px solid $accent-color;
+      }
+  }
+  
+  .logo-icon {
+   fill:$companies-logo;
+   transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .company-link:hover .logo-icon,
+  .company-link:focus .logo-icon {
+    fill: $accent-color;
+  }

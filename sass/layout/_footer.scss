@@ -1,0 +1,102 @@
+.footer {
+    background-color: $footer-background-color;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .contacts-container .logo {
+    color: $main-title-color;
+    margin-bottom: 20px;
+  }
+
+  .contact-info {
+    font-style: normal;
+    @include font ();
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $main-title-color;
+
+      &-item:not(:last-child) {
+        margin-bottom: 9px;
+      }
+  }
+
+  .contact-info-link {
+    font-style: normal;
+    color: $footer-info-color;
+  }
+  
+  .contact-info-address {
+    color: $main-title-color;
+  }
+  
+  .social-links-container .social-links-item {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .social-links-container .social-links-item-link {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social-links-container .social-links-icons {
+    fill: $main-title-color;
+  }
+  
+  .call-container {
+    width: 570px;
+
+    .modal-btn {
+      display: flex;
+      align-items: center;
+      color: $main-title-color;
+    }
+  }
+  
+  .call {
+    display: block;
+    @include font (14px, 700, 1.14);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-title-color;
+    margin-bottom: 20px;
+  }
+  
+  .send-icon {
+    margin-left: 10px;
+  }
+  
+  .contact-form-input {
+    display: block;
+    font-size: 16px;
+    line-height: 1.25;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    color: $main-title-color;
+    background-color: $footer-background-color;
+    margin-right: 12px;
+  }
+  
+  .button-input-form {
+    display: flex;
+  }
+  

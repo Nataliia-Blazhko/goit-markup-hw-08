@@ -1,0 +1,208 @@
+.header {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color:$main-background-color;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: Raleway;
+  @include font (24px, 700, 1.166);
+  // font-weight: 700;
+  // font-size: 24px;
+  // line-height: 1.166;
+  letter-spacing: 0.03em;
+  color: $logo-color;
+  animation-duration: 2000ms;
+}
+
+.logo-first-word {
+  color: $accent-color;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    max-width: 480px;
+    margin: 0 auto;
+}
+}
+
+.menu-btn {
+  position: relative;
+  z-index: 100;
+  height: 40px;
+  background-color:transparent;
+  border: none;
+
+    &.is-open {
+      .close-icon {
+        display: block;
+      }
+      .burger-icon {
+        display:none;
+      }
+    }
+}
+
+.close-icon{
+display: none;
+}
+
+.menu-wrapper {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 480px;
+  height: 393px;
+  background-color:$main-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-left: 140px;
+  // padding-right: 140px;
+  transform: translateY(-100%);
+  transition: transform 250ms linear;
+
+  &.is-open {
+    transform: translateY(0);
+  }
+}
+
+// .navigation-list,
+// .address-list {
+// display: flex;
+// }
+
+.navigation-list-link,
+.header-tel,
+.header-mail{
+ @include font (18px, 500, 1.166); 
+  letter-spacing: 0.02em;
+  color: $main-font-color;
+}
+
+.header-tel,
+.header-mail {
+font-style: normal;
+color:$secondary-font-color;
+}
+
+.mail-icon,
+.tel-icon {
+ margin-right: 10px;
+  fill: currentColor;
+}
+
+.navigation-list {
+margin-bottom: 60px;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.address-list-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+// .header-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+// .navigation {
+//   display: flex;
+//   align-items: center;
+
+//   .logo {
+//     margin-right: 85px;
+//   }
+// }
+
+
+// .navigation-list {
+//   display: flex;
+// }
+
+// .navigation-list-item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+// .address-list {
+//   display: flex;
+// }
+
+// .address-list-item {
+//   display: block;
+
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+
+// .header-contacts {
+//   display: flex;
+// }
+
+
+// .active {
+//   color: $accent-color;
+
+//     &::after {
+//       content:"" ;
+//       position: absolute;
+//       display: block;
+//       left: 0px;
+//       bottom: 0px;
+//       width: 100%;
+//       height: 4px;
+//       border-radius: 2px;
+//       background-color: $accent-color;  
+//     }
+// }
+
+// .navigation-list-link {
+//   position: relative;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+
+// }
+
+// .navigation-list-link,
+// .header-tel,
+// .header-mail {
+//   font-style: normal;
+//   @include font (14px, 500, 1.14);
+//   // font-weight: 500;
+//   // font-size: 14px;
+//   // line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   color: $main-font-color;
+//   transition-property: color;
+//   transition-duration: 250ms;
+//   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//   }
+// }
+
+// .header-tel,
+// .header-mail {
+//   display: flex;
+//   color: $secondary-font-color;
+// }
+
+// .mail-icon,
+// .tel-icon {
+//   width: 16px;
+//   height: 16px;
+//   margin-right: 10px;
+//   fill: currentColor;
+// }

@@ -1,0 +1,55 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+  url("../images/hero.jpg");
+}
+
+.hero-title {
+  text-align: center;
+  margin-bottom: 30px;
+  @include font (26px,900, 1.615);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $main-title-color;
+}
+
+// .hero {
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)),
+//   url("../images/hero.jpg");
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   max-width:1600px;
+//   margin-right:auto;
+//   margin-left: auto;
+//   margin-top: -1px;
+
+//   .modal-btn {
+//     margin: 0 auto;
+//   }
+// }
+
+// .hero-title {
+//   text-align: center;
+//   margin-bottom: 30px;
+//   @include font (44px, 900, 1.36);
+//   // font-weight: 900;
+//   // font-size: 44px;
+//   // line-height: 1.36;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+//   color: $main-title-color;
+
+//   &:hover,
+//   &:focus {
+//     animation-name: pulse;
+//     animation-duration: 2000ms;
+//   }
+// }

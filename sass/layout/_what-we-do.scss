@@ -1,0 +1,40 @@
+    .what-we-do-container .sections-title {
+    margin-bottom: 50px;
+  }
+  
+  .what-we-do-list {
+    display: flex;
+  }
+  
+  .what-we-do-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .our-works-link {
+    position:relative;
+  }
+  
+  .what-we-do-title {
+    display: flex;
+    position: absolute;
+    @extend %subtitle;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.03em;
+    // text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    color: $main-title-color;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 70px;
+    right: 0px;
+    bottom: 0px;
+  }
+  
+  .what-we-do-list-item:hover .what-we-do-title,
+  .what-we-do-list-item:focus .what-we-do-title {
+    animation-name: zoomIn;
+    animation-duration: 1000ms;
+  }
