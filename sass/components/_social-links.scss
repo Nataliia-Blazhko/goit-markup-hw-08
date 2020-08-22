@@ -7,6 +7,11 @@
   margin-right: 10px;
 }
 
+  .social-links-item-link:hover .social-links-icons,
+  .social-links-item-link:focus .social-links-icons {
+    fill: $main-title-color;
+  }
+
 .social-links-item-link {
     width: 44px;
     height: 44px;
@@ -24,18 +29,54 @@
       background-color: $accent-color;
     }
   }
- 
-  .social-links-item-link:hover .social-links-icons,
-  .social-links-item-link:focus .social-links-icons {
-    fill: $main-title-color;
-  }
 
-  .social-links-icons {
-    width: 20px;
-    height: 20px;
-    fill:$companies-logo;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.social-links-icons {
+      width: 20px;
+      height: 20px;
+      fill:$companies-logo;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+// .social-links-list {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .social-links-item:not(:last-child) {
+//   margin-right: 10px;
+// }
+
+// .social-links-item-link {
+//     width: 44px;
+//     height: 44px;
+//     padding-top: 12px;
+//     padding-right: 12px;
+//     padding-bottom: 12px;
+//     padding-left: 12px;
+//     border-radius: 50%;
+//     transition-property: background-color;
+//     transition-duration: 250ms;
+//     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//       background-color: $accent-color;
+//     }
+//   }
+ 
+//   .social-links-item-link:hover .social-links-icons,
+//   .social-links-item-link:focus .social-links-icons {
+//     fill: $main-title-color;
+//   }
+
+//   .social-links-icons {
+//     width: 20px;
+//     height: 20px;
+//     fill:$companies-logo;
+//     transition-property: fill;
+//     transition-duration: 250ms;
+//     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+//   }
   
