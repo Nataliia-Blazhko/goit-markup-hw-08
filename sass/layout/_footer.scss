@@ -2,7 +2,93 @@
     background-color: $footer-background-color;
   }
 
+.contacts-container,
+.social-links-container {
+margin-bottom: 60px;
+}
+
+.contacts-container,
+.social-links-container,
+.call-container {
+    text-align: center;
+  }
   
+.contacts-container .logo {
+    color: $main-title-color;
+    margin-bottom: 20px;
+  }
+
+    .contact-info {
+    @include font ();
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 1.714;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    
+
+      &-item:not(:last-child) {
+        margin-bottom: 8px;
+      }
+  }
+.contact-info-address {
+    color: $main-title-color;
+}
+
+  .contact-info-link {
+    font-style: normal;
+    color: $footer-info-color;
+  }
+// CALL одинаковые параметры у моб. таблет. и десктопной версиях
+.call {
+  display: block;
+  @include font (14px, 700, 1.142);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-title-color;
+  margin-bottom: 20px;
+  }
+
+.social-links-container .social-links-item {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  }
+
+.social-links-container .social-links-item-link {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+.social-links-container .social-links-icons {
+  fill: $main-title-color;
+  }
+
+    
+.send-icon {
+    margin-left: 10px;
+}
+  
+.contact-form-input {
+  display: block;
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 4px;
+  width: 450px;
+  height: 50px;
+  color: $main-title-color;
+  background-color: $footer-background-color;
+  margin-bottom: 20px;
+  }
+
 // .footer {
 //     background-color: $footer-background-color;
 //   }

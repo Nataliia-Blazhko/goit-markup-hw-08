@@ -72,20 +72,20 @@ color:$secondary-font-color;
 
 @media screen and (max-width: 767px) {
   .header {
-    max-width: 480px;
+    max-width: 767px;
     margin: 0 auto;
 
   .logo {
     position: relative;
     z-index: 100;
   }
-
+  
   .menu-wrapper {
     position: absolute;
     text-align: center;
     top: 100%;
     right: 0;
-    width: 480px;
+    width: 100%;
     height: 393px;
     background-color:$main-background-color;
     padding-top: 60px;
