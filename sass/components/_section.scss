@@ -1,27 +1,30 @@
+ .section {
+    padding-bottom:60px;
+    padding-top:60px;
+  }
+  
+  .sections-title {
+    @include font (28px, 700, 1.178);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-font-color;
+    margin-bottom: 30px;
+  }
+
+// ЗНАЧЕНИЯ ДЛЯ TABLET ТАКИЕ ЖЕ КАК И ДЛЯ MOBILE
+// @media screen and (min-width:768px) {
+// }
+
+@media screen and (min-width:1200) {
 .section {
-  padding-bottom:60px;
-  padding-top:60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .sections-title {
+    @include font (36px, 700, 1.166);
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.166;
+    margin-bottom: 50px;
+  }
 }
-
-.sections-title {
-  @include font (28px, 700, 1.178);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $main-font-color;
-  margin-bottom: 30px;
-}
-
-// .section {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-//   }
-
-//   .sections-title {
-//     @include font (36px, 700, 1.16);
-//     // font-weight: 700;
-//     // font-size: 36px;
-//     // line-height: 1.16;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: $main-font-color;
-//   }
