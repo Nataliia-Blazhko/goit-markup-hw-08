@@ -56,7 +56,7 @@ input {
   }
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -547,16 +547,20 @@ input {
   fill: transparent;
 }
 
+.features-list {
+  display: flex;
+  justify-content: center;
+}
+
 .features-background {
-  width: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-right: 190px;
-  padding-bottom: 25px;
-  padding-left: 190px;
 }
 
 .features-list-title {
@@ -567,7 +571,6 @@ input {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .features-list-text {
@@ -578,26 +581,42 @@ input {
   color: #757575;
 }
 
-@media screen and (min-width: 768px) {
-  .features-background {
-    display: flex;
-    justify-content: center;
-    width: 354px;
-    height: 120px;
-    padding-top: 25px;
-    padding-right: 100px;
-    padding-bottom: 25px;
-    padding-left: 100px;
+@media screen and (max-width: 767px) {
+  .features-list-title {
+    text-align: center;
   }
   .features-list {
-    display: flex;
+    display: block;
+  }
+  .features-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-list {
     flex-wrap: wrap;
+  }
+  .features-list-item {
+    width: 354px;
   }
   .features-list-item:nth-child(odd) {
     margin-right: 30px;
   }
   .features-list-item:nth-child(-n+2) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list-item {
+    width: 270px;
+  }
+  .features-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .features-list-item {
+    margin-bottom: 0;
   }
 }
 
@@ -616,7 +635,7 @@ input {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -631,8 +650,6 @@ input {
 
 .our-team {
   background-color: #f5f4fa;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .sections-title .our-team-container {
