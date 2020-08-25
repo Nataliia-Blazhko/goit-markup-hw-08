@@ -1,45 +1,20 @@
 .footer {
     background-color: $footer-background-color;
-  }
-
-.contacts-container,
-.social-links-container {
-margin-bottom: 60px;
+    padding-bottom:60px;
+    padding-top:60px;
 }
 
 .contacts-container,
 .social-links-container,
 .call-container {
     text-align: center;
-  }
+}
   
 .contacts-container .logo {
     color: $main-title-color;
     margin-bottom: 20px;
-  }
-
-    .contact-info {
-    @include font ();
-    // font-weight: 400;
-    // font-size: 14px;
-    // line-height: 1.714;
-    font-style: normal;
-    letter-spacing: 0.03em;
-    
-
-      &-item:not(:last-child) {
-        margin-bottom: 8px;
-      }
-  }
-.contact-info-address {
-    color: $main-title-color;
 }
 
-  .contact-info-link {
-    font-style: normal;
-    color: $footer-info-color;
-  }
-// CALL одинаковые параметры у моб. таблет. и десктопной версиях
 .call {
   display: block;
   @include font (14px, 700, 1.142);
@@ -51,6 +26,29 @@ margin-bottom: 60px;
   color: $main-title-color;
   margin-bottom: 20px;
   }
+
+.contact-info {
+  @include font ();
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.714;
+  font-style: normal;
+  letter-spacing: 0.03em;
+    
+      &-item:not(:last-child) {
+        margin-bottom: 8px;
+      }
+  }
+
+.contact-info-address {
+    color: $main-title-color;
+}
+
+  .contact-info-link {
+    font-style: normal;
+    color: $footer-info-color;
+  }
+
 
 .social-links-container .social-links-item {
   border-radius: 50%;
@@ -86,9 +84,74 @@ margin-bottom: 60px;
   height: 50px;
   color: $main-title-color;
   background-color: $footer-background-color;
-  margin-bottom: 20px;
+}
+
+// MOBILE
+@media screen and (max-width: 767px) {
+  .contacts-container,
+  .social-links-container {
+    margin-bottom: 60px;
   }
 
+  .contact-form-input {
+    margin-bottom: 20px;
+  }
+
+}
+  // TABLET
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .call-container {
+    margin-top: 60px;
+  }
+
+  .contact-form-input {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+}
+  // DESKTOP
+@media screen and (min-width:1200px) {
+  .footer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .footer-container {
+    justify-content: space-between;
+  }
+  
+  .button-input-form {
+    display: flex;
+  }
+
+  .contact-form-input {
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  .call {
+    text-align: left;
+  }
+
+  .contacts-container {
+    text-align: left;
+  }
+
+  .call-container {
+    margin-top: 0;
+  }
+
+  .contact-form-input {
+    margin-bottom: 0;
+  } 
+}
 // .footer {
 //     background-color: $footer-background-color;
 //   }
