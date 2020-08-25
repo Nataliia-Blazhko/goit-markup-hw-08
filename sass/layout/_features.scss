@@ -42,6 +42,9 @@
     display: block;
   }
 
+  .features-list-item {
+    width: 450px;
+  }
   .features-list-item:not(:last-child) {
     margin-bottom: 30px;
   }

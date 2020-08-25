@@ -1,3 +1,4 @@
+@import "./utils/normalize";
 @import "./utils/variables"; 
 @import "./components/base";
 @import "./utils/mixins";
@@ -13,9 +14,6 @@
 @import "./components/social-links";
 @import "./layout/our-clients";
 @import "./layout/footer";
-
-// @import "./utils/normalize";
-// @import "./utils/placeholder";
 
 
 // // страничка portfolio
