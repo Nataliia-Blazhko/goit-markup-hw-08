@@ -402,8 +402,6 @@ input {
 }
 
 .header {
-  padding-bottom: 10px;
-  padding-top: 10px;
   background-color: #ffffff;
 }
 
@@ -481,6 +479,8 @@ input {
     margin: 0 auto;
     position: fixed;
     z-index: 100;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
   .navigation-list-link,
   .header-tel,
@@ -503,7 +503,7 @@ input {
     width: 100%;
     height: 393px;
     background-color: #ffffff;
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 60px;
     transform: translateY(-100%);
     transition: transform 250ms linear;
@@ -548,6 +548,18 @@ input {
   }
   .menu-btn.is-open .burger-icon {
     display: none;
+  }
+  .mail-icon {
+    width: 16px;
+    height: 12px;
+  }
+  .tel-icon {
+    width: 10px;
+    height: 16px;
+  }
+  .mail-icon,
+  .tel-icon {
+    margin-right: 10px;
   }
 }
 
@@ -598,13 +610,24 @@ input {
   .address-list-item:not(:last-child) {
     margin-bottom: 10px;
   }
+  .mail-icon {
+    width: 14px;
+    height: 10px;
+  }
+  .tel-icon {
+    width: 10px;
+    height: 14px;
+  }
+  .mail-icon,
+  .tel-icon {
+    margin-right: 8px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .header-container {
     display: flex;
     align-items: center;
-    justify-content: start;
   }
   .logo {
     margin-right: 93px;
@@ -621,12 +644,24 @@ input {
     margin-right: 30px;
     margin-bottom: 0;
   }
+  .mail-icon {
+    width: 16px;
+    height: 12px;
+  }
+  .tel-icon {
+    width: 10px;
+    height: 16px;
+  }
+  .mail-icon,
+  .tel-icon {
+    margin-right: 10px;
+  }
 }
 
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -638,6 +673,21 @@ input {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    width: 480px;
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-hero.jpg");
+    background-size: 480px 400px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-hero@2x.jpg");
+  }
 }
 
 .modal-btn {
