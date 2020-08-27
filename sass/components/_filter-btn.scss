@@ -3,10 +3,6 @@
   justify-content: center;
 }
 
-.filter-btn-list:not(:last-child) {
-  margin-right: 8px;
-}
-
 .filter-btn {
   display: block;
   border: 0;
@@ -16,10 +12,10 @@
   padding-bottom: 6px;
   padding-left: 22px;
   cursor: pointer;
-  @include font(16px, 500, 1.63);
+  @include font(16px, 500, 1.625);
   // font-weight: 500;
   // font-size: 16px;
-  // line-height: 1.63;
+  // line-height: 1.625;
   letter-spacing: 0.03em;
   text-align: center;
   color: $main-font-color;
@@ -39,4 +35,35 @@
 .accent-btn {
   color: $main-title-color;
   background-color: $accent-color;
+}
+
+ // MOBILE
+ @media screen and (max-width: 767px) {
+  .filter {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn-list:not(:nth-child(3n)) {
+    margin-right: 8px;
+  }
+
+  .filter-btn-list:nth-child(-n+3) {
+    margin-bottom: 15px;
+  }
+ }
+
+ // TABLET
+@media screen and (min-width: 768px) {
+  .filter-btn-list:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width:1200px) {
+  .filter-btn-list:not(:last-child) {
+    margin-right: 8px;
+  }
 }
