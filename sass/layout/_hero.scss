@@ -11,70 +11,95 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $main-title-color;
-}
 
+    &:hover,
+    &:focus {
+      animation-name: pulse;
+      animation-duration: 2000ms;
+    }
+}
 
 // MOBILE
 @media screen and (max-width: 767px) {
   .hero {
-  width: 480px;
-  height: 400px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-  url("../images/mobile-hero.jpg");
-  background-size: 480px 400px;
-  // background-size: contain;
+    width: 480px;
+    height: 400px;
+    background-image: 
+    $hero-background,
+    url("../images/mobile-hero.jpg");
+    background-size: 480px 400px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero {
-    background-image:  linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
+    background-image: 
+    $hero-background,
       url('../images/mobile-hero@2x.jpg');
   }
 }
 }
 
+// TABLET
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    height: 400px;
+    background-image: 
+    $hero-background,
+    url("../images/tablet-hero.jpg");
+    background-size: 768px 400px;
+  }
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image:  
+    $hero-background,
+    url('../images/tablet-hero@2x.jpg');
+  }
+}
+}
+
+// DESKTOP
+@media screen and (min-width:1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    width: 100%;
+    height: 600px;
+    background-image: 
+    $hero-background,
+    url("../images/desktop-hero.jpg");
+    background-size: 1600px 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hero-title {
+    @include font (44px, 900, 1.363);
+  }
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image:  
+    $hero-background,
+    url('../images/desktop-hero@2x.jpg');
+  }
+}
+}
 
 
 // .hero {
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)),
-//   url("../images/hero.jpg");
 //   background-repeat: no-repeat;
 //   background-position: center;
-//   max-width:1600px;
 //   margin-right:auto;
 //   margin-left: auto;
 //   margin-top: -1px;
-
-//   .modal-btn {
-//     margin: 0 auto;
-//   }
 // }
 
-// .hero-title {
-//   text-align: center;
-//   margin-bottom: 30px;
-//   @include font (44px, 900, 1.36);
-//   // font-weight: 900;
-//   // font-size: 44px;
-//   // line-height: 1.36;
-//   text-align: center;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-//   color: $main-title-color;
-
-//   &:hover,
-//   &:focus {
-//     animation-name: pulse;
-//     animation-duration: 2000ms;
-//   }
-// }

@@ -17,7 +17,7 @@
     <!-- Блок навигации -->
     <div class="header-container container">
       <a class="logo link animate__fadeInLeft" href="./index.html" lang="en">
-        <span class="logo-first-word">Web</span> Studio</a>
+        <span class="logo-first-word">Web</span>Studio</a>
       <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
         <svg width="40" height="40">
           <use class="burger-icon" href="./images/sprite.svg#burger"></use>
@@ -134,19 +134,25 @@
         <ul class="what-we-do-list list">
           <li class="what-we-do-list-item">
             <a class="our-works-link link" href="">
-              <img src="./images/box1.jpg" alt="Десктопные приложения" width="370" height="294" />
+              <img alt="Десктопные приложения" src="./images/desktop-box1.jpg" srcset="./images/desktop-box1.jpg 1x, ./images/desktop-box1@2x.jpg 2x" type="image/jpg">
               <p class="what-we-do-title">Десктопные приложения</p>
             </a>
           </li>
           <li class="what-we-do-list-item">
             <a class="our-works-link link" href="">
-              <img src="./images/box2.jpg" alt="Мобильные приложения" width="370" height="294" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/desktop-box2.jpg 1x, ./images/desktop-box2@2x.jpg 2x" type="image/jpg"/>
+                <img src="./images/desktop-box2.jpg" alt="Мобильные приложения"/>
+              </picture>
               <p class="what-we-do-title">Мобильные приложения</p>
             </a>
           </li>
           <li class="what-we-do-list-item">
             <a class="our-works-link link" href="">
-              <img src="./images/box3.jpg" alt="Дизайнерские решения" width="370" height="294" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/desktop-box3.jpg 1x, ./images/desktop-box3@2x.jpg 2x" type="image/jpg"/>
+                <img src="./images/desktop-box3.jpg" alt="Дизайнерские решения"/>
+              </picture>
               <p class="what-we-do-title">Дизайнерские решения</p>
             </a>
           </li>
@@ -159,7 +165,12 @@
         <h2 class="sections-title">Наша команда</h2>
         <ul class="our-team-list list">
           <li class="person">
-            <img class="person-photo" src="./images/photo1.jpg" alt="Николай Кучеренко" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/mobile-photo1.jpg 1x, ./images/mobile-photo1@2x.jpg 2x" type="image/jpg"/>
+              <source media="(min-width: 1200px)" srcset="./images/desktop-photo1.jpg 1x, ./images/desktop-photo1@2x.jpg 2x" type="image/jpg"/>
+              <source media="(min-width: 768px)" srcset="./images/tablet-photo1.jpg 1x, ./images/tablet-photo1@2x.jpg 2x" type="image/jpg"/>
+              <img src="./images/mobile-photo1.jpg" srcset="./images/mobile-photo1@2x.jpg 2x" alt="Игорь Демьяненко" class="person-photo"/>
+            </picture>
             <h3 class="team-people">Игорь Демьяненко</h3>
             <p class="position" lang="en">Product Designer</p>
             <ul class="social-links-list list">
@@ -194,7 +205,12 @@
             </ul>
           </li>
           <li class="person">
-            <img class="person-photo" src="./images/photo2.jpg" alt="Ольга Иванова" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/mobile-photo2.jpg 1x, ./images/mobile-photo2@2x.jpg 2x" type="image/jpg"/>
+              <source media="(min-width: 1200px)" srcset="./images/desktop-photo2.jpg 1x, ./images/desktop-photo2@2x.jpg 2x" type="image/jpg"/>
+              <source media="(min-width: 768px)" srcset="./images/tablet-photo2.jpg 1x, ./images/tablet-photo2@2x.jpg 2x" type="image/jpg"/>
+              <img src="./images/mobile-photo2.jpg" srcset="./images/mobile-photo2@2x.jpg 2x" alt="Ольга Репина" class="person-photo"/>
+            </picture>
             <h3 class="team-people">Ольга Репина</h3>
             <p class="position" lang="en">Frontend Developer</p>
             <ul class="social-links-list list">
@@ -229,7 +245,12 @@
             </ul>
           </li>
           <li class="person">
-            <img class="person-photo" src="./images/photo3.jpg" alt="Андрей Шевченко" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/mobile-photo3.jpg 1x, ./images/mobile-photo3@2x.jpg 2x" type="image/jpg"/>
+              <source media="(min-width: 1200px)" srcset="./images/desktop-photo3.jpg 1x, ./images/desktop-photo3@2x.jpg 2x" type="image/jpg"/>
+              <source media="(min-width: 768px)" srcset="./images/tablet-photo3.jpg 1x, ./images/tablet-photo3@2x.jpg 2x" type="image/jpg"/>
+              <img src="./images/mobile-photo3.jpg" alt="Николай Тарасов" class="person-photo"/>
+            </picture>
             <h3 class="team-people">Николай Тарасов</h3>
             <p class="position" lang="en">Marketing</p>
             <ul class="social-links-list list">
@@ -264,7 +285,12 @@
             </ul>
           </li>
           <li class="person">
-            <img class="person-photo" src="./images/photo4.jpg" alt="Иван Николаев" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/mobile-photo4.jpg 1x, ./images/mobile-photo4@2x.jpg 2x" type="image/jpg"/>
+              <source media="(min-width: 1200px)" srcset="./images/desktop-photo4.jpg 1x, ./images/desktop-photo4@2x.jpg 2x" type="image/jpg"/>
+              <source media="(min-width: 768px)" srcset="./images/tablet-photo4.jpg 1x, ./images/tablet-photo4@2x.jpg 2x" type="image/jpg"/>
+              <img src="./images/mobile-photo4.jpg" alt="Михаил Ермаков" class="person-photo"/>
+            </picture>
             <h3 class="team-people">Михаил Ермаков</h3>
             <p class="position" lang="en">UI Designer</p>
             <ul class="social-links-list list">
@@ -354,8 +380,7 @@
   <footer class="footer">
     <div class="footer-container container">
       <div class="contacts-container">
-        <a class="logo link animate__fadeInLeft" href="./index.html" lang="en"><span class="logo-first-word">Web</span>
-          Studio</a>
+        <a class="logo link animate__fadeInLeft" href="./index.html" lang="en"><span class="logo-first-word">Web</span>Studio</a>
         <address>
           <ul class="contact-info list">
             <li class="contact-info-item">

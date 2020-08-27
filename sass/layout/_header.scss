@@ -206,6 +206,7 @@ color:$secondary-font-color;
   @include font (12px, 500, 1.166); 
     letter-spacing: 0.02em;
   }
+
   .active {
     color: $accent-color;
 
@@ -255,18 +256,31 @@ color:$secondary-font-color;
       margin-right: 93px;
   }
 
+  .navigation {
+    margin-right: 305px;
+  }
+
   .address-list {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .address-list-item {
-    display: block;
+    display: flex;
 
     &:not(:last-child) {
       margin-right: 30px;
       margin-bottom: 0;
     }
+  }
+
+  .navigation-list-link,
+  .header-tel,
+  .header-mail{
+    @include font (14px, 500, 1.142); 
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
   }
 
   .mail-icon {
