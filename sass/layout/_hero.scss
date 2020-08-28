@@ -2,6 +2,7 @@
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0 auto;
+  margin-top: -1px;
 }
 
 .hero-title {
@@ -22,12 +23,14 @@
 // MOBILE
 @media screen and (max-width: 767px) {
   .hero {
-    width: 480px;
+    max-width: 480px;
     height: 400px;
     background-image: 
     $hero-background,
     url("../images/mobile-hero.jpg");
-    background-size: 480px 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -94,12 +97,4 @@
 }
 }
 
-
-// .hero {
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   margin-right:auto;
-//   margin-left: auto;
-//   margin-top: -1px;
-// }
 

@@ -43,7 +43,6 @@
   color: $secondary-font-color;
 }
 
-
 .work-example-img {
   width: 100%;
 }
@@ -76,7 +75,7 @@
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-text:hover .popup-text {
+.work-examples-list-item:hover .popup-text {
   transform: translateY(0px);
 }
 
@@ -87,9 +86,13 @@
   }
 
   .work-examples-list-item {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 30px;
 }
+
+ .work-example-img {
+   width:100%;
+ }
 }
 
 // TABLET
@@ -105,6 +108,7 @@
 
   .work-examples-list-item {
     width: 354px;
+    height: 100%;
     margin-bottom: 30px;
 
     &:nth-child(odd) {
@@ -114,7 +118,10 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
-}
+  }
+  .work-example-img {
+    width:100%;
+  }
 }
 
 // DESKTOP

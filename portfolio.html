@@ -24,7 +24,7 @@
           <use class="menu-close-icon" href="./images/sprite.svg#close1"></use>
         </svg>
       </button>
-      <div class="menu-wrapper" data-menu>
+      <div id="menu-wrapper" class="menu-wrapper" data-menu>
         <nav class="navigation">
           <ul class="navigation-list list">
             <li class="navigation-list-item">
@@ -67,11 +67,17 @@
         <div class="portfolio-container">
           <h1 hidden>Портфолио работ</h1>
           <ul class="filter">
-            <li class="filter-btn-list list"><button class="filter-btn accent-btn">Все</button></li>
-            <li class="filter-btn-list list"><button class="filter-btn">Веб-сайты</button></li>
-            <li class="filter-btn-list list"><button class="filter-btn">Приложения</button></li>
-            <li class="filter-btn-list list"><button class="filter-btn">Дизайн</button></li>
-            <li class="filter-btn-list list"><button class="filter-btn">Маркетинг</button></li>
+            <li class="filter-btn-list list">
+              <button class="filter-btn accent-btn">Все</button>
+            </li>
+            <li class="filter-btn-list list">
+              <button class="filter-btn">Веб-сайты</button></li>
+            <li class="filter-btn-list list">
+              <button class="filter-btn">Приложения</button></li>
+            <li class="filter-btn-list list">
+              <button class="filter-btn">Дизайн</button></li>
+            <li class="filter-btn-list list">
+              <button class="filter-btn">Маркетинг</button></li>
           </ul>
         </div>
         <div class="work-examples">
@@ -219,8 +225,7 @@
   <footer class="footer">
     <div class="footer-container container">
       <div class="contacts-container">
-        <a class="logo link animate__fadeInLeft" href="./index.html" lang="en"><span class="logo-first-word">Web</span>
-          Studio</a>
+        <a class="logo link animate__fadeInLeft" href="./index.html" lang="en"><span class="logo-first-word">Web</span>Studio</a>
         <address>
           <ul class="contact-info list">
             <li class="contact-info-item">
@@ -273,7 +278,7 @@
         <b class="call">Подпишитесь на рассылку</b>
         <form class="button-input-form" action="#">
           <label for="name"></label>
-          <input type="email" class="contact-form-input" name="email" placeholder="E-mail" required>
+          <input  id="name" type="email" class="contact-form-input" name="email" placeholder="E-mail" required>
           <button class="modal-btn">
             Подписаться
             <svg class="send-icon" width="24px" height="24px">

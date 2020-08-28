@@ -24,7 +24,7 @@
           <use class="menu-close-icon" href="./images/sprite.svg#close1"></use>
         </svg>
       </button>
-      <div class="menu-wrapper" data-menu>
+      <div id="menu-wrapper" class="menu-wrapper" data-menu>
         <nav class="navigation">
           <ul class="navigation-list list">
             <li class="navigation-list-item">
@@ -134,14 +134,14 @@
         <ul class="what-we-do-list list">
           <li class="what-we-do-list-item">
             <a class="our-works-link link" href="">
-              <img alt="Десктопные приложения" src="./images/desktop-box1.jpg" srcset="./images/desktop-box1.jpg 1x, ./images/desktop-box1@2x.jpg 2x" type="image/jpg">
+              <img alt="Десктопные приложения" src="./images/desktop-box1.jpg" srcset="./images/desktop-box1.jpg 1x, ./images/desktop-box1@2x.jpg 2x"/>
               <p class="what-we-do-title">Десктопные приложения</p>
             </a>
           </li>
           <li class="what-we-do-list-item">
             <a class="our-works-link link" href="">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./images/desktop-box2.jpg 1x, ./images/desktop-box2@2x.jpg 2x" type="image/jpg"/>
+                <source media="(min-width: 1200px)" srcset="./images/desktop-box2.jpg 1x, ./images/desktop-box2@2x.jpg 2x"/>
                 <img src="./images/desktop-box2.jpg" alt="Мобильные приложения"/>
               </picture>
               <p class="what-we-do-title">Мобильные приложения</p>
@@ -150,7 +150,7 @@
           <li class="what-we-do-list-item">
             <a class="our-works-link link" href="">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./images/desktop-box3.jpg 1x, ./images/desktop-box3@2x.jpg 2x" type="image/jpg"/>
+                <source media="(min-width: 1200px)" srcset="./images/desktop-box3.jpg 1x, ./images/desktop-box3@2x.jpg 2x"/>
                 <img src="./images/desktop-box3.jpg" alt="Дизайнерские решения"/>
               </picture>
               <p class="what-we-do-title">Дизайнерские решения</p>
@@ -433,7 +433,7 @@
         <b class="call">Подпишитесь на рассылку</b>
         <form class="button-input-form" action="#">
           <label for="name"></label>
-          <input type="email" class="contact-form-input" name="email" placeholder="E-mail" required>
+          <input id="name" type="email" class="contact-form-input" name="email" placeholder="E-mail" required>
           <button class="modal-btn">
             Подписаться
             <svg class="send-icon" width="24px" height="24px">
@@ -456,28 +456,28 @@
         </svg>
       </button>
       <div class="form-input-wrapper">
-        <input type="text" class="form-input" name="user-name" placeholder=" ">
+        <input id="user-name" type="text" class="form-input" name="user-name" placeholder=" ">
         <label for="user-name" class="form-input-label">Имя</label>
         <svg class="modal-form-icons" width="18" height="18">
           <use href="./images/sprite.svg#person"></use>
         </svg>
       </div>
       <div class="form-input-wrapper">
-        <input type="tel" class="form-input" name="user-tel" placeholder=" ">
+        <input id="user-tel" type="tel" class="form-input" name="user-tel" placeholder=" ">
         <label for="user-tel" class="form-input-label">Телефон</label>
         <svg class="modal-form-icons" width="18" height="18">
           <use href="./images/sprite.svg#tel"></use>
         </svg>
       </div>
       <div class="form-input-wrapper">
-        <input type="email" class="form-input" name="user-email" placeholder=" ">
+        <input id="user-email" type="email" class="form-input" name="user-email" placeholder=" ">
         <label for="user-email" class="form-input-label">Почта</label>
         <svg class="modal-form-icons" width="18" height="18">
           <use href="./images/sprite.svg#mail"></use>
         </svg>
       </div>
       <div class="textarea-wrapper">
-        <textarea class="comment" name="comment" rows="5" placeholder=" "></textarea>
+        <textarea id="comment" class="comment" name="comment" rows="5" placeholder=" "></textarea>
         <label class="textarea-label" for="comment">Комментарий</label>
       </div>
       <label class="modal-form-label">
