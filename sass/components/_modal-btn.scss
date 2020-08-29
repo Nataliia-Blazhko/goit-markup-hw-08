@@ -19,3 +19,10 @@
   color: $main-title-color;
   background-color: $accent-color;
 }
+
+// BEFORE MOBILE
+@media screen and (max-width: 200px) {
+  .modal-btn {
+    width: 100%;
+  }
+}

@@ -67,3 +67,25 @@
     margin-right: 8px;
   }
 }
+
+  // BEFORE MOBILE
+  @media screen and (max-width: 391px) {
+    .filter-btn-list:nth-child(2n + 1) {
+      margin-right: 8px;
+    }
+  }
+
+  // BEFORE MOBILE LOW
+  @media screen and (max-width: 246px) {
+    .filter-btn-list:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  // BEFORE MOBILE EXTRA LOW
+  @media screen and (min-width: 247px) and (max-width: 280px) {
+    .filter-btn-list:nth-last-child(2){
+      margin-bottom: 10px;
+    }
+  }
+  

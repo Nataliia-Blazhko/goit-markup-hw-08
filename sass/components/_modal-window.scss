@@ -303,3 +303,10 @@
     top: 3px;
   }
 }
+
+// BEFORE MOBILE
+@media screen and (max-width: 479px) {
+.modal-form {
+padding: 20px;
+  } 
+}
